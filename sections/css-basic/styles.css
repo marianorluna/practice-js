@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 2rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: .25rem solid grey;
+    border-radius: .5rem;
+}
+
+input:focus {
+    border: .25rem solid green;
+    background-color: lightgreen;
+}
+
+input:focus::placeholder {
+    color: green;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input:hover, select:hover {
+    border-color: green;
+}
+
+select {
+    color: gray;
+}
+
+option{
+    background-color: lightgreen;
+    font-size: 1rem;
+    color: black;
+}
