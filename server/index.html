@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta al servidor</title>
+</head>
+<body>
+    
+    <p id="user1"></p>
+    <p id="user2"></p>
+
+    <script>
+        let respuesta = new XMLHttpRequest();
+        respuesta.open('GET', 'http://localhost:3000');
+        respuesta.onreadystatechange = function() {
+            if(this.readyState == XMLHttpRequest.DONE && this.status === 200) {
+                let usuarios = JSON.parse(this.responseText);
+
+                document.getElementById('user1').innerText = usuarios['results'][0]['user'];
+                document.getElementById('user2').innerText = usuarios['results'][1]['user'];
+            }
+        };
+
+        respuesta.send();
+    </script>
+</body>
+</html>

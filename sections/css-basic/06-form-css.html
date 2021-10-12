@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Stylized form with CSS</h1>
-    <div>
+    <div class="container">
+        <h1>Stylized form with CSS</h1>
         <form>
             <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" placeholder="Insert your first name" />
+            <input type="text" name="fname" id="fname" placeholder="Insert your first name" required />
             <br />
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname" placeholder="Insert your last name" />
+            <input type="text" name="lname" id="lname" placeholder="Insert your last name" required />
             <label for="country">Country</label>
-            <select name="country" id="country">
+            <select name="country" id="country" required>
                 <option value="0" disabled selected hidden>Select</option>
                 <option value="1">Spain</option>
                 <option value="2">France</option>
                 <option value="3">Germany</option>
                 <option value="4">Italy</option>
             </select>
+            <button type="submit">Send</button>
         </form>
     </div>
 </body>

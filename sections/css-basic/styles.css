@@ -2,15 +2,31 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 body {
     margin: 2rem;
+    background: rgb(156, 208, 79);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: ;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(50, 50, 50);
 }
 
 form {
     margin-top: 1rem;
+    background: lightgray;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 input, select {
@@ -43,7 +59,25 @@ select {
 }
 
 option{
-    background-color: lightgreen;
+    background-color: white;
     font-size: 1rem;
     color: black;
+}
+
+button {
+    background: green;
+    border: none;
+    color: white;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: lightgreen;
+    color: black;
+    font-weight: 600;
 }
